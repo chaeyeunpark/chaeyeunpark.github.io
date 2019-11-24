@@ -1,5 +1,5 @@
 # Profile information
-name: Fresh
+name: Chae-Yeun Park 
 title: Fresh - Free Jekyll Theme
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -10,20 +10,17 @@ baseurl: "/fresh" # the subpath of your site, e.g. /blog
 url: "artemsheludko.pw" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Social
-facebook: #Add your Facebook
-twitter: #Add your Twitter
-google-plus: #Add your Google+
-github: #Add your Github
+github: chaeyeunpark
 
 # Contact form
-email: #your-email@domain.com
+email: chae.yeun.park@gmail.com
 
 # Comments
 discus-identifier: # Add your Disqus identifier
 
 # Paginate
 paginate: 5
-paginate_path: /page:num/
+paginate_path: /blog/page:num/
 
 # Build settings
 markdown: kramdown

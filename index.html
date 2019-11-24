@@ -1,31 +1,51 @@
 ---
-layout: default
+layout: post
 ---
 
-{% for post in paginator.posts %}
-<article class="main-article">
-  <div class="wrap-content">
-    <header class="header-article">
-      <h2 class="title-article"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
-      <div class="post-date"><span>{{post.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
-    </header>
-    {% if post.img %}
-       <img class="post-image" src={{ "/assets/img/" | prepend: site.baseurl | append: post.img }} alt="{{post.title}}">
-    {% endif %}
-    <p>{{post.description}} <a class="more" href="{{post.url | prepend: site.baseurl}}">(Read more...)</a></p>
-  </div>
-</article>
-{% endfor %}
+<div style="text-align:center">
+	<img src="assets/img/cyp.png" style="width: 300px;"> <br >
+	I am a researcher working on quantum many-body physics and machine learning. I am now in Institute for <a href="http://www.thp.uni-koeln.de">theoretical physics@University of Cologne</a>.
+</div>
 
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="previous"><i class="fa fa-chevron-left" aria-hidden="true"></i> Previous</a>
-  {% else %}
-    <span class="previous"><i class="fa fa-chevron-left" aria-hidden="true"></i> Previous</span>
-  {% endif %}
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="next">Next <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-  {% else %}
-    <span class="next ">Next <i class="fa fa-chevron-right" aria-hidden="true"></i></span>
-  {% endif %}
+<div class="left-aligned">
+<h2>Personal Info</h2>
+<dl class="dl-horizontal">
+	<dt>Date of Birth</dt>
+	<dd>28. Feb. 1990. in <a href="http://en.wikipedia.org/wiki/Daejeon">Daejeon, South Korea</a></dd>
+	<dt>Email</dt>
+	<dd>chae.yeun.park (at) gmail (dot) com</dd>
+</dl>
+
+<h2>Employment </h2>
+<dl style="padding-left: 2em;">
+	<dt><a href="http://www.thp.uni-koeln.de">Institute for theoretical physics</a>, University of Cologne, Germany</dt>
+		<dd>Postdoctoral researcher at AG-Kastoryano (06. 2018 ~ Present)</dd>
+	<dt><a href="http://apctp.org">Asia Pacific Center for Theoretical Physics</a>, Pohang, South Korea </dt>
+	<dd>Postdoctoral researcher at Prof. Jaeyoon Cho's group (05. 2017 ~ 05. 2018)</dd>
+</dl>
+
+
+<h2> Education </h2>
+<dl style="padding-left: 2em;">
+	<dt>Graduate Study (09. 2010 ~ 02. 2017)</dt>
+	<dd>PhD in Physics & Astronomy, Seoul National University</dd>
+	<dt>Undergraduate Study (03. 2006 ~ 08. 2010)</dt>
+	<dd>BA in Physics, Seoul National University</dd>
+	<dd>BA in Computer Science and Engineering (double majored), Seoul National University</dd>
+</dl>
+
+<h2>Research Interests</h2>
+<ul>
+	<li>Machine learning methods for quantum physics</li>
+	<li>Quantum information theory</li>
+</ul>
+
+<h2>Computer Skills</h2>
+<ul>
+	<li>Highly experienced in C/C++ (including the modern standards C++11/14)</li>
+	<li>Highly experienced in GNU/Linux (such as server management using CentOS/Debian)</li>
+	<li>Proficient in Python/Java/Mathematica</li>
+	<li>Parallel programming using OpenMP and MPI</li>
+	<li>Web Development (PHP, Django, Flask, CSS, Javascript, etc.)</li>
+</ul>
 </div>
