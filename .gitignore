@@ -1,5 +1,4 @@
 _site
 .*
-
+vendor/
 config.codekit
-Gemfile.lock
